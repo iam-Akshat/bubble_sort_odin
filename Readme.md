@@ -1,8 +1,17 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # BUBBLE SORT ALGORITHM
+Bubble sort algorith implemented in ruby.
+bubble_sort_by method takes a block uses yield for custom comparing functions.
 
+## Made with
+- Ruby
+- VS Code
 
+## Setup
+- Clone the repo
+- Type `bundle install` in terminal
+- Ready to make changes
 ## Authors
 
 👤 **Akshat Sethi**
