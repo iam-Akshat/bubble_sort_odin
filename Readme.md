@@ -9,7 +9,8 @@ bubble_sort_by method takes a block uses yield for custom comparing functions.
 - VS Code
 
 ## Setup
-- Clone the repo
+- run `git clone https://github.com/iam-Akshat/bubble_sort_odin.git` in your terminal
+- cd `bubble_sort_odin`
 - Type `bundle install` in terminal
 - Ready to make changes
 ## Authors
