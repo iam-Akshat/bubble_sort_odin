@@ -11,6 +11,7 @@ def bubble_sort(array)
     end
     break unless swapped
   end
+  array
 end
 array = [156, 2000, 80, 14, 40, 20, 3, 7]
 bubble_sort(array)
@@ -28,6 +29,7 @@ def bubble_sort_by(array)
     did_change or break
     did_change = nil
   end
+  array
 end
 arr_string = %w[hi hello hey h]
 bubble_sort_by(arr_string) do |left, right|
