@@ -3,12 +3,12 @@ def bubble_sort(array)
 
   loop do
     swapped = false
-      (a - 1).times do |i|
-        if array[i] > array[i + 1]
+    (a - 1).times do |i|
+      if array[i] > array[i + 1]
         array[i], array[i + 1] = array[i + 1], array[i]
         swapped = true
-        end
       end
+    end
     break unless swapped
   end
 end
@@ -17,20 +17,20 @@ bubble_sort(array)
 puts array.inspect
 
 def bubble_sort_by(array)
-  didChange=nil
-  for t in 0...array.length
-      for y in 0...array.length-t-1
-          if yield(array[y],array[y+1])>0
-              array[y],array[y+1]=array[y+1],array[y]
-              didChange=true
-          end    
+  did_change = nil
+  (0...array.length).each do |t|
+    (0...array.length - t - 1).each do |y|
+      if yield(array[y], array[y + 1]).positive?
+        array[y], array[y + 1] = array[y + 1], array[y]
+        did_change = true
       end
-      didChange or break
-      didChange=nil
+    end
+    did_change or break
+    did_change = nil
   end
-end    
-arrString=["hi","hello","hey","h"]
-bubble_sort_by(arrString) do |left,right|
+end
+arr_string = %w[hi hello hey h]
+bubble_sort_by(arr_string) do |left, right|
   left.length - right.length
 end
-puts arrString.inspect
+puts arr_string.inspect
