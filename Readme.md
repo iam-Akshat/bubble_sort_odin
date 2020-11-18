@@ -2,7 +2,6 @@
 
 # BUBBLE SORT ALGORITHM
 
-Additional description about the project and its features.
 
 ## Authors
 
